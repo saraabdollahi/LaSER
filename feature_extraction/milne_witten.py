@@ -3,13 +3,12 @@ import numpy as np
 
 
 
-def main(input_address,link_graph,entities_size):
+def MW_features(input_dataset,entities_size):
     
     ### The input_dataset contains two columns: source and target for which we want to compute Milne_Witten score
-    input_dataset=pd.read_pickle(input_address)
+    
  
-    #### The link_graph contains two columns: entity and links
-    link_graph=pd.read_pickle(link_graph)   
+    link_graph=pd.read_csv("/data/link_graph.txt", sep="\t")   
     all_entities=list(set(list(input_dataset["source"].unique())+list(input_dataset["target"].unique())))
     incoming_tmp=link_graph.loc[link_graph["target"].isin(all_entities),]
     incoming_lists=incoming_tmp.groupby("target")["source"].apply(list).reset_index(name="incoming")
@@ -36,9 +35,5 @@ def main(input_address,link_graph,entities_size):
     unneeded_columns=["empty","incoming_x","incoming_y","incoming_len_x","incoming_len_y","shared_in","min_","max_","intersection_log","min_log","max_log","w","mw","target_entity_x", "target_entity_y"]
     for k in range(len(unneeded_columns)):
         del merged_links[unneeded_columns[k]]
-    #merged_links.to_pickle("MW_tmp")
     return(merged_links)
 
-if __name__=="__main__":
-    args = parse_args()
-    main(args)    
