@@ -1,8 +1,6 @@
 # LaSER
 Here, LaSER takes a query entity and a language as input and recommends a language-specific ranking of events as output using:
 
-To do so, it uses:
-
 * ### Candidate Generation
       Given a query entity and using an embedding model, candidate_generation.py creates a set of candidate events.
 * ### Feature Extraction
