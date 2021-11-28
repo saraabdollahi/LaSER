@@ -15,7 +15,7 @@ import pickle
 #from feature_extraction import feature_extraction
 
 
-data=pd.read_csv("eventkg_click_features.txt", sep="\t")
+data=pd.read_csv("training_dataset.txt", sep="\t")
 
 data=data.loc[data["source"].notna(),]
 data=data.reset_index(drop=True)
