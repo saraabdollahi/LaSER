@@ -13,7 +13,7 @@ from test import feature_extraction
 
 #### as input we should get language and the query entity
 
-language_interlinks=pd.read_csv("language_interlinks.txt", sep="\t")
+language_interlinks=pd.read_csv("/data/language_interlinks.txt", sep="\t")
 
 
 def parse_args():
