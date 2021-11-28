@@ -8,4 +8,4 @@ Here, we provid multiple sample dataset as the input of different modules.
 * language_interlinks:  
 * link_graph: A two-column dataframe that contains all wikipedia outgoing links of source entities.
 * temporal_dataset: Start_date and end_date of entities.
-* training_dataset: A sample of EventKG+Click (https://github.com/saraabdollahi/EventKG-Click) dataset with German relevance score and extracted individual and pair features.
+* training_dataset: A sample of [EventKG+Click] (https://github.com/saraabdollahi/EventKG-Click) dataset with German relevance score and extracted individual and pair features.
