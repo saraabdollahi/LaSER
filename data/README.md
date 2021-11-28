@@ -1,6 +1,6 @@
 # Datasets
 
-Here, we provid multiple sample dataset as the input of different modules. 
+Here, we provid multiple sample dataset as the input of different modules: 
 
 * coordinates_dataset: This dataset contains a set of coordinates per each entity.
 * german_events: A list of german labels of events.
