@@ -3,9 +3,9 @@ Here, LaSER takes a query entity and a language as input and recommends a langua
 
 To do so, it uses:
 
-* ### Candidate Generation:
- given a query entity and using an embedding model, it creates a set of candidate events.
-* ### Feature Extraction:
- Here we extract individual and pair features for candidate events.
+* ### Candidate Generation
+      Given a query entity and using an embedding model, candidate_generation.py creates a set of candidate events.
+* ### Feature Extraction
+      feature_extraction.py returns individual and pair features for candidate events.
 * ### Ranker: 
-And finally, using the trained LTR model, the candidate events are ranked and top events are suggested.
+      Using training dataset, LTR_training.py trains a ranker which would finally be used on extracted features of candidate events to rank candidates.
