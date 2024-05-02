@@ -8,7 +8,7 @@ The embedding methods used are *Deepwalk* and *Node2Vec*; Deepwalk method runs r
 
 ### Input format
 
-test The supported input format for embedding is an edgelist with the following columns (*See the edgelist file*):
+test2 The supported input format for embedding is an edgelist with the following columns (*See the edgelist file*):
 
 	node1 node2 weight
 
